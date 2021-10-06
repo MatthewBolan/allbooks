@@ -31,22 +31,18 @@
 
 <form class="bg-dark w-25 p-3 text-white">
   
-  <h2> 
   
-  <c:out value="${number}"></c:out> 
+  
+ <h1> <c:out value="${books.title}"></c:out> </h1>
    
-  <c:out value="${city}"></c:out> 
+    <h2> <c:out value="${books.description}"></c:out>  </h2>
   
-  <c:out value="${person}"></c:out> 
+  <h2>    <c:out value="${books.language}"></c:out>   </h2>
   
-  <c:out value="${hobby}"></c:out> 
-  
-  <c:out value="${thing}"></c:out>
-  
-  <c:out value="${nice}"></c:out>
+  <h2>    <c:out value="${books.numberOfPages}"></c:out>   </h2>
   
   
-  </h2>
+  
   
 </form>
 
@@ -55,7 +51,7 @@
 </div>
 
 <div class="d-flex justify-content-center">
-<a href="/">Go Back</a>
+<a href="/books">Go Back</a>
 </div>
 
 </body>
